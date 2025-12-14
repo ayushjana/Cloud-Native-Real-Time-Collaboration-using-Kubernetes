@@ -13,6 +13,7 @@ dotenv.config({ path: path.join(__dirname, "..", ".env") });
 const connectDB = require("./config/db");
 connectDB();
 
+
 const app = express();
 
 // ✅ CORS
@@ -61,6 +62,7 @@ const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
   console.log(`Server running on PORT ${PORT}...`.yellow.bold);
+  // console.log("testing")
 });
 
 // ✅ Socket.io setup
